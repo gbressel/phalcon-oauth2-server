@@ -80,6 +80,7 @@ class Gateway extends Component
         }
 
         if ($refreshToken) {
+            $authorization->setRefreshTokenStorage(new RefreshTokenStorage());
             $authorization->addGrantType(new RefreshTokenGrant());
         }
 

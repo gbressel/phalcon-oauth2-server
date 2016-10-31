@@ -52,8 +52,8 @@ class RefreshTokenStorage extends Component implements RefreshTokenInterface
      */
     public function create($token, $expireTime, $accessToken)
     {
-        $token = new RefreshToken();
-        $token->save([
+        $refreshToken = new RefreshToken();
+        $refreshToken->save([
             'id'              => $token,
             'expire_time'     => $expireTime,
             'access_token_id' => $accessToken,
