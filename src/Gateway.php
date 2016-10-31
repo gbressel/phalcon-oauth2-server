@@ -13,6 +13,7 @@ use Phalcon\OAuth2\Server\Storage\Phql\AuthCodeStorage;
 use Phalcon\OAuth2\Server\Storage\Phql\ClientStorage;
 use Phalcon\OAuth2\Server\Storage\Phql\ScopeStorage;
 use Phalcon\OAuth2\Server\Storage\Phql\SessionStorage;
+use Phalcon\OAuth2\Server\Storage\Phql\RefreshTokenStorage;
 use Phalcon\Text;
 
 class Gateway extends Component
