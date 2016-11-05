@@ -24,7 +24,7 @@ class RefreshTokenStorage extends Component implements RefreshTokenInterface
     {
         $result = $this->getBuilder()->from(RefreshToken::class)
             ->where('id = :id:')
-            ->andWhere('expire_time = :time:')
+            ->andWhere('expire_time > :time:')
             ->getQuery()
             ->getSingleResult([
                 'id'   => $token,
